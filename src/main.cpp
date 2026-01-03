@@ -19,7 +19,7 @@ int main() {
         cout << "5. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
-        cin.ignore();  // për getline
+        cin.ignore();  // pas cin >>, për getline
 
         if (choice == 1) {
             // Add Student

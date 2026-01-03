@@ -10,14 +10,9 @@ private:
     string studentName;
 
 public:
-    // Konstruktor
     Student(int id, string name);
-
-    // Funksion për të shfaqur studentin
-    void displayStudent() const;
-
-    // Funksion për pjesën Search Student
-    int getId() const;
+    void displayStudent() const; // shfaq studentin
+    int getId() const;           // kthen ID-në
 };
 
 #endif
