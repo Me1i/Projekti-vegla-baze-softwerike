@@ -15,7 +15,8 @@ int main() {
         cout << "1. Shto student\n";
         cout << "2. Kërko student sipas ID\n";
         cout << "3. Shfaq të gjithë studentët\n";
-        cout << "4. Dil\n";
+        cout << "4. Fshij student sipas ID\n";
+        cout << "5. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
         cin.ignore();  // për getline
@@ -69,6 +70,26 @@ int main() {
             }
 
         } else if (choice == 4) {
+            // Delete Student
+            int id;
+            cout << "Shkruaj ID për fshirje: ";
+            cin >> id;
+
+            bool found = false;
+            for (auto it = students.begin(); it != students.end(); ++it) {
+                if (it->getId() == id) {
+                    students.erase(it);
+                    cout << "Studenti u fshi me sukses.\n";
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                cout << "Studenti nuk u gjet.\n";
+            }
+
+        } else if (choice == 5) {
             // Exit
             break;
 
