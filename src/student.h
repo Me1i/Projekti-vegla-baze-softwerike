@@ -6,12 +6,15 @@ using namespace std;
 
 class Student {
 private:
-    int studentId;
-    string studentName;
+int studentId;
+string studentName;
 
 public:
-    Student(int id, string name);
-    void displayStudent();
+Student(int id, string name);
+void displayStudent();
+
+// Funksion për pjesën tjetër (Search Student)
+int getId();
 };
 
 #endif
