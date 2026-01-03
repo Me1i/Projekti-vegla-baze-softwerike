@@ -1,17 +1,17 @@
 #include "student.h"
 #include <iostream>
+using namespace std;
 
 Student::Student(int id, string name) {
-studentId = id;
-studentName = name;
+    studentId = id;
+    studentName = name;
 }
 
-void Student::displayStudent() {
-std::cout << "ID: " << studentId << std::endl;
-std::cout << "Emri: " << studentName << std::endl;
+void Student::displayStudent() const {
+    cout << "ID: " << studentId << endl;
+    cout << "Emri: " << studentName << endl;
 }
 
-// Funksion për pjesën tjetër
-int Student::getId() {
-return studentId;
+int Student::getId() const {
+    return studentId;
 }
